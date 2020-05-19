@@ -54,8 +54,8 @@ nav{
         line-height: 40px;
         background-color: #ffcc01;
         transition: all .1s linear;
-        position: absolute;
-        top: 0;
+        /*position: absolute;
+        top: 0;*/
     }
     .toggle:hover{
        color: white;
@@ -66,7 +66,7 @@ nav{
         transition: all .1s linear;
     }
     .checkboxmenu:checked + label .touch{
-        height: 190px;
+        height: 250px;
     }
     .menu{
         display: flex;
@@ -75,5 +75,25 @@ nav{
         align-items: center;
         height: 0;
         transition: height .7s linear;
+    }
+    .menu li {
+        display: flex;
+        width: 95%;
+        align-self: center;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .menu li a {
+        width: 95%;
+        align-self: center;
+        align-content: center;
+        text-align: center;
+    }
+    .menu li a.logo{
+        font-size: 20px;
+        margin-right: 0px;
+    }
+    .menu li a.contacts{
+        margin-right: 0px;
     }
 }
