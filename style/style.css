@@ -7,11 +7,12 @@ body, html{
     overflow-x: hidden;
 }
 nav{
-    margin:0 auto;
+    margin: 0 auto;
     max-width: 1100px;
     width: 100%;
 }
-#checkbox-menu, .toglle{
+.checkboxmenu,
+.toggle{
     display: none;
 }
 .menu{
@@ -30,7 +31,7 @@ nav{
     align-self: center;
     font-size: 13px;
     padding: 8px 15px;
-    transition: background .2s linear;
+  
 }
 .menu li a:hover{
     background: #ffcc01;
@@ -42,4 +43,37 @@ nav{
 }
 .menu li a.contacts{
     margin-right: 100px;
+}
+@media screen and (max-width: 765px){
+    .toggle{
+        width: 100%;
+        clear: both;
+        font-size: 20px;
+        display: block;
+        text-align: center;
+        line-height: 40px;
+        background-color: #ffcc01;
+        transition: all .1s linear;
+        position: absolute;
+        top: 0;
+    }
+    .toggle:hover{
+       color: white;
+    }
+    .checkboxmenu:checked + label .touch li{
+        opacity: 1;
+        visibility: visible;
+        transition: all .1s linear;
+    }
+    .checkboxmenu:checked + label .touch{
+        height: 190px;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 0;
+        transition: height .7s linear;
+    }
 }
