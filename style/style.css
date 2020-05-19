@@ -44,6 +44,45 @@ nav{
 .menu li a.contacts{
     margin-right: 100px;
 }
+.wrapper{
+    margin: 0 auto;
+    max-width: 1100px;
+    width: 100%;
+}
+.intro{
+    margin-top: 25px;
+    display: flex;
+    justify-content: flex-end;
+}
+.introImg{
+    background-image: url(../img/mainImg.jpg);
+    background-position: center;
+    width: 1085px;
+    height: 480px;
+}
+.intro .introText{
+    position: absolute;
+    top: 220px;
+    right: 650px;
+    font-size: 62px;
+}
+.introContacts{
+    background-color: #ffcc01;
+    max-width: 590px;
+    position: absolute;
+    top: 490px;
+    right: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding: 23px 50px;
+}
+.introContacts i{
+    color: white;
+    margin-left: 30px;
+}
+.introContacts p{
+    font-size: 20px;
+}
 @media screen and (max-width: 765px){
     .toggle{
         width: 100%;
@@ -95,5 +134,30 @@ nav{
     }
     .menu li a.contacts{
         margin-right: 0px;
+    }
+    .intro{
+        margin: 0;
+        display: block;
+        max-width: 100%;
+    }
+    .introImg{
+        background-position: left 700px top -200px;
+        height: 528px;
+    }
+    .intro .introText{
+        position: relative;
+        top: 150px; 
+        left: 10px;
+        font-size: 38px;
+    }
+   
+    .intro .introContacts{
+        position: relative;
+       right: 0;
+       top: -1px;
+       padding: 15px;
+    } 
+    .intro .introContacts p{
+        font-size: 12px;
     }
 }
