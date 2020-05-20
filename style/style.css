@@ -71,10 +71,10 @@ nav{
     max-width: 590px;
     position: absolute;
     top: 490px;
-    right: 70px;
+    right: 130px;
     display: flex;
     justify-content: space-between;
-    padding: 23px 50px;
+    padding: 15px 20px;
 }
 .introContacts i{
     color: white;
@@ -83,6 +83,44 @@ nav{
 .introContacts p{
     font-size: 20px;
 }
+.stats{
+    display: flex;
+    margin-top: 130px;
+}
+.stats-line{
+    display: flex;
+}
+.stats-text{
+    padding: 40px;
+}
+.stats-text h2{
+    font-size: 40px;
+    margin-bottom: 70px;
+}
+.stats-text p{
+    margin-top: 50px;
+    font-size: 14px;
+    line-height: 27px;
+}
+.square{
+    width: 200px;
+    height: 200px;
+    background-color:#f0efee;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.stats-square{
+    font-size: 40px;
+    color: #ffcc01;
+    margin-bottom: 15px;
+}
+.square-text{
+    font-size: 14px;
+}
+
 @media screen and (max-width: 765px){
     .toggle{
         width: 100%;
@@ -159,5 +197,23 @@ nav{
     } 
     .intro .introContacts p{
         font-size: 12px;
+    }
+    .stats{
+        margin: 0;
+        flex-direction: column;
+    }
+    .stats-text{
+        padding: 6px;
+    }
+    .stats-text h2{
+        margin: 5px;
+        font-size: 25px;
+    }
+    .stats-text p{
+        margin: 5px;
+        font-size: 12px;
+    }
+    .square{
+        height: 100px;
     }
 }
