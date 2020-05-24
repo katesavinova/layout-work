@@ -83,6 +83,7 @@ nav{
 .introContacts p{
     font-size: 20px;
 }
+/*section - stats*/
 .stats{
     display: flex;
     margin-top: 130px;
@@ -123,6 +124,7 @@ nav{
 .square-text{
     font-size: 14px;
 }
+/*section card for apartment*/
 .apartments{
     background-color: #e6e6e6;
     padding: 60px 0;
@@ -202,6 +204,7 @@ nav{
 .buttons-search{
 display: flex;
 }
+/*section for step */
 .steps h2{
     margin-top: 55px;
     margin-bottom: 35px;
@@ -255,7 +258,35 @@ justify-content: space-between;
     margin-top: 20px;
     border-bottom:  3px solid #000000;
 }
-
+.serv-container{
+display: flex;
+margin-top: 70px;
+}
+.services{
+width: 100%;
+height: auto;
+}
+.serv-img-container{
+    width: 58%;
+}
+.serv-text{
+    width: 42%;
+    margin-left: 3%;
+}
+.serv-text p{
+    margin-bottom: 60px;
+}
+.services h2{
+    font-size: 40px;
+}
+.services p{
+    font-size: 13px;
+    line-height: 30px;
+}
+.services h4{
+    font-size: 25px;
+    margin-bottom: 25px;
+}
 
 @media screen and (max-width: 765px){
     .toggle{
@@ -267,8 +298,6 @@ justify-content: space-between;
         line-height: 40px;
         background-color: #ffcc01;
         transition: all .1s linear;
-        /*position: absolute;
-        top: 0;*/
     }
     .toggle:hover{
        color: white;
@@ -391,5 +420,15 @@ justify-content: space-between;
     .stepblock:hover{
         background:#acacac;
         color: rgb(255, 255, 255);
+    }
+    .serv-container{
+        margin-top: 20px;
+        flex-direction: column;
+    }
+    .serv-img-container{
+        width: 100%;
+    }
+    .serv-text{
+        width: 100%;
     }
 }
